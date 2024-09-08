@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Queer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Filmes Queers</h1>
+    </header>
+    <main>
+    <section>
+        <input type="text" placeholder="Digite o nome do filme" id="campo-pesquisa">
+        <button onclick="pesquisar()">
+            Pesquisar
+        </button>
+    </section>
+    <section class="resultados-pesquisa"
+    id="resultados-pesquisa">
+        <!-- <div class="item-resultado">
+            <h2>O Segredo de Brokeback Mountain</h2>
+            <p class="descricao-meta">O Segredo de Brokeback Mountain é um drama romântico de uma jornada emocional e complexa no coração do Velho Oeste. A história gira em torno de Ennis Del Mar e Jack Twist, dois jovens vaqueiros que se conhecem e se apaixonam durante um verão trabalhando em um remoto rancho.</p>
+            <a href="https://letterboxd.com/film/brokeback-mountain/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>Sociedade dos Poetas Mortos</h2>
+            <p class="descricao-meta">Um clássico da literatura americana, Sociedade dos Poetas Mortos é um drama que explora a importância da educação, da individualidade e da busca pela própria voz. O filme acompanha um grupo de alunos em um internato tradicional e a influência de um professor carismático e não convencional.</p>
+            <a href="https://letterboxd.com/film/dead-poets-society/" target="_blank">Letterboxd</a>
+        </div>
+        
+        <div class="item-resultado">
+            <h2>Nunca Fui Santa</h2>
+            <p class="descricao-meta">Uma comédia satírica sobre uma jovem líder de torcida que é enviada para um centro de reabilitação para "curar" sua homossexualidade, onde ela questiona sua identidade e encontra uma nova comunidade.</p>
+            <a href="https://letterboxd.com/film/but-im-a-cheerleader/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>Garotos de Programa</h2>
+            <p class="descricao-meta">Garotos de Programa é um drama que explora a vida de jovens envolvidos na prostituição masculina em uma grande cidade. O filme aborda temas como exploração, sexualidade e a busca por sobrevivência em um mundo hostil.</p>
+            <a href="https://letterboxd.com/film/my-own-private-idaho/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>Adeus Minha Concubina</h2>
+            <p class="descricao-meta">Adeus Minha Concubina é um épico chinês que narra a história de dois atores de ópera de Pequim, desde a infância até a Revolução Cultural. A amizade e o amor entre os dois são colocados à prova pelas turbulências políticas da China, resultando em uma jornada emocionante e trágica.</p>
+            <a href="https://letterboxd.com/film/farewell-my-concubine/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>O Talentoso Ripley</h2>
+            <p class="descricao-meta">O Talentoso Ripley é um thriller psicológico que acompanha a obsessão de Tom Ripley por Dickie Greenleaf, um jovem rico e charmoso. Tom se infiltra na vida de Dickie, desencadeando uma série de eventos que culminam em um jogo mortal de gato e rato.</p>
+            <a href="https://letterboxd.com/film/the-talented-mr-ripley/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>Café da Manhã em Plutão</h2>
+            <p class="descricao-meta">Café da Manhã em Plutão é um drama biográfico e musical que conta a história de Patrick "Kitten" Braden, uma jovem transexual em Dublin nos anos 1990. O filme explora temas como identidade de gênero, amizade e a busca por aceitação, tudo embalado por uma trilha sonora vibrante.</p>
+            <a href="https://letterboxd.com/film/breakfast-on-pluto/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>O Retrato de Dorian Gray</h2>
+            <p class="descricao-meta">O Retrato de Dorian Gray é uma adaptação cinematográfica do clássico romance de Oscar Wilde. Ambientado na Londres vitoriana, o filme acompanha a história de Dorian Gray, um jovem belo e narcisista que faz um pacto com o diabo, condenando sua alma em troca da eterna juventude. À medida que ele se entrega a uma vida de prazeres e excessos, seu retrato revela os horrores de sua decadência moral.</p>
+            <a href="https://letterboxd.com/film/dorian-gray-2009/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>A Criada</h2>
+            <p class="descricao-meta">A Criada é um thriller psicológico sul-coreano que explora temas de manipulação, desejo e identidade. A história se concentra na relação complexa entre uma jovem criada e a rica herdeira que ela serve, revelando um jogo psicológico intenso e cheio de reviravoltas.</p>
+            <a href="https://letterboxd.com/film/the-handmaiden/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>Moonlight: Sob a Luz do Luar</h2>
+            <p class="descricao-meta">Moonlight: Sob a Luz do Luar é um drama que explora a masculinidade negra e a identidade homossexual através da vida de Chiron, um jovem que cresce em três períodos distintos em Miami. O filme aborda temas como a violência, o amor e a busca por si mesmo.</p>
+            <a href="https://letterboxd.com/film/moonlight/" target="_blank">Letterboxd</a>
+          </div>
+
+          <div class="item-resultado">
+            <h2>Retrato de uma Jovem em Chamas</h2>
+            <p class="descricao-meta">Retrato de uma Jovem em Chamas é um drama romântico histórico que se passa na França do século XVIII. A história acompanha a pintora Marianne, que é contratada para fazer um retrato de casamento de Héloïse, uma jovem que se recusa a posar. Enquanto se escondem para pintar em segredo, as duas mulheres desenvolvem um intenso e proibido romance.</p>
+            <a href="https://letterboxd.com/film/portrait-of-a-lady-on-fire/" target="_blank">Letterboxd</a>
+        </div>
+
+        <div class="item-resultado">
+            <h2>Clube da Luta para Meninas</h2>
+            <p class="descricao-meta">Clube da Luta para Meninas é uma comédia irreverente que acompanha duas adolescentes que decidem tomar as rédeas de suas vidas e transformar sua escola em um campo de batalha para perderem a virgindade, utilizando o clube de luta como arma para atrair garotas bonitas.</p>
+            <a href="https://letterboxd.com/film/bottoms/" target="_blank">Letterboxd</a>
+        </div> -->
+    </section>
+    </main>
+    <footer>
+        <p>2024 - Cinema LGBT. Todos os direitos reservados</p>
+        <p>Entre em contato pelo Instagram: @magsteffens</p>
+    </footer>
+<script src="dados.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
